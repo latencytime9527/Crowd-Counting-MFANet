@@ -12,7 +12,7 @@ class NEL_Loss(Module):
         prediction = prediction.requires_grad_()
         C1 = 1E-8
         Eudis = torch.sum(target * target) + C1
-        norm = torch.sqrt(Eudis).unsqueeze(1).unsqueeze(2)
+        norm = torch.sqrt(Eudis)
         target = target /  norm 
         prediction =  prediction / norm
         delta = prediction - target 
