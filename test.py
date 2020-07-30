@@ -52,8 +52,8 @@ def estimate_density_map(img_root,gt_dmap_root,model_param_path,index):
 
 if __name__=="__main__":
     torch.backends.cudnn.enabled=False
-    img_root='/home/sda_disk/sda_disk/data/ShanghaiTech_Dataset/part_B_final/test_data/images'
-    gt_dmap_root='/home/sda_disk/sda_disk/data/ShanghaiTech_Dataset/part_B_final/test_data/ground_truth'
+    img_root='./part_B_final/test_data/images'
+    gt_dmap_root='./part_B_final/test_data/ground_truth'
     model_param_path='./checkpoints/epoch_best_partB.pth'
     torch.cuda.set_device(1)
     print("using device:",1) 
