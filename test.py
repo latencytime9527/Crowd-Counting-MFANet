@@ -54,7 +54,7 @@ if __name__=="__main__":
     torch.backends.cudnn.enabled=False
     img_root='/home/UCF_QNRF/test_data/images'
     gt_dmap_root='/home/UCF_QNRF/test_data/ground_truth'
-    model_param_path='./checkpoints/epoch_best_partB.pth'
+    model_param_path='./checkpoints/epoch_best_model.pth'
     torch.cuda.set_device(1)
     print("using device:",1) 
     cal_mae(img_root,gt_dmap_root,model_param_path)
