@@ -7,11 +7,10 @@ import time
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train ')
-    parser.add_argument('--data-dir', default='/home/sda_disk/sda_disk/data/ShanghaiTech_Dataset/part_B_final/')
+    parser.add_argument('--data-dir', default='/home/UCF_QNRF/')
     parser.add_argument('--save-dir', default='./checkpoint')
     parser.add_argument('--lr', type=float, default=1e-5)
     parser.add_argument('--resume', default='')
-    #parser.add_argument('--max-model-num', type=int, default=1)
     parser.add_argument('--max-epoch', type=int, default=400)
     parser.add_argument('--val-epoch', type=int, default=1)
     parser.add_argument('--val-start', type=int, default=0)
